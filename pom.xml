@@ -17,6 +17,16 @@
         <version>2.1.1.RELEASE</version>
         <relativePath/>
     </parent>
+
+    <!--<repositories>-->
+        <!--&lt;!&ndash;cdh开发手册&ndash;&gt;-->
+        <!--&lt;!&ndash;https://docs.cloudera.com/documentation/enterprise/release-notes/topics/cdh_vd_cdh5_maven_repo.html&ndash;&gt;-->
+        <!--<repository>-->
+            <!--<id>cloudera</id>-->
+           <!--<url> https://repository.cloudera.com/artifactory/cloudera-repos/</url>-->
+        <!--</repository>-->
+    <!--</repositories>-->
+
     <properties>
         <java.version>1.8</java.version>
         <spring-boot.version>2.2.5.RELEASE</spring-boot.version>

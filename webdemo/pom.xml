@@ -5,7 +5,9 @@
     <parent>
         <groupId>com.springboot.stack</groupId>
         <artifactId>parent</artifactId>
-        <relativePath/> <!-- lookup parent from repository -->
+        <version>1.0-SNAPSHOT</version>
+        <!--<relativePath/> &lt;!&ndash; lookup parent from repository &ndash;&gt;-->
+        <relativePath>../pom.xml</relativePath>
     </parent>
     <groupId>com.springboot.stack</groupId>
     <artifactId>webdemo</artifactId>
@@ -21,11 +23,13 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+            <!--<version>${spring-boot.version}</version>-->
         </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
+            <!--<version>${spring-boot.version}</version>-->
             <scope>test</scope>
             <exclusions>
                 <exclusion>
@@ -36,6 +40,14 @@
         </dependency>
     </dependencies>
 
-
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <!--<version>${spring-boot.version}</version>-->
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

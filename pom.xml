@@ -10,6 +10,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>webdemo</module>
+        <module>websecuritydemo</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -21,20 +22,24 @@
     <repositories>
         <!--cdh开发手册-->
         <!--https://docs.cloudera.com/documentation/enterprise/release-notes/topics/cdh_vd_cdh5_maven_repo.html-->
+        <!--<repository>-->
+            <!--<id>cloudera</id>-->
+           <!--<url> https://repository.cloudera.com/artifactory/cloudera-repos/</url>-->
+            <!--&lt;!&ndash;支持发布版本的下载&ndash;&gt;-->
+            <!--<releases>-->
+                <!--<enabled>true</enabled>-->
+                <!--&lt;!&ndash;默认每天检查一次更新&ndash;&gt;-->
+                <!--<updatePolicy>daily</updatePolicy>-->
+                <!--<checksumPolicy></checksumPolicy>-->
+            <!--</releases>-->
+            <!--&lt;!&ndash;不支持快照版本的下载&ndash;&gt;-->
+            <!--<snapshots>-->
+                <!--<enabled>false</enabled>-->
+            <!--</snapshots>-->
+        <!--</repository>-->
         <repository>
-            <id>cloudera</id>
-           <url> https://repository.cloudera.com/artifactory/cloudera-repos/</url>
-            <!--支持发布版本的下载-->
-            <releases>
-                <enabled>true</enabled>
-                <!--默认每天检查一次更新-->
-                <updatePolicy>daily</updatePolicy>
-                <checksumPolicy></checksumPolicy>
-            </releases>
-            <!--不支持快照版本的下载-->
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
+            <id>maven-central</id>
+            <url>http://192.168.1.83:8081/repository/maven-central/</url>
         </repository>
     </repositories>
 
@@ -59,6 +64,10 @@
                     <artifactId>junit-vintage-engine</artifactId>
                 </exclusion>
             </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
     </dependencies>
     <build>

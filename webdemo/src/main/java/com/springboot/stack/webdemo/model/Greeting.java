@@ -1,4 +1,4 @@
-package com.springboot.stack.websecuritydemo.demo.model;
+package com.springboot.stack.webdemo.model;
 
 /**
  * Greatingmomodel

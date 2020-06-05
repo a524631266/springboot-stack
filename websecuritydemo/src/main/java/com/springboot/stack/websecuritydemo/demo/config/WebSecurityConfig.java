@@ -10,13 +10,14 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
+        http.csrf().disable();
         // 放行所有网页
         http.authorizeRequests()
-                .antMatchers("/","/home.html","/hello.html").permitAll()
+                .antMatchers("/login.html","/login","/wxlogin").permitAll()
+                .and()
                 .formLogin()
                 .loginPage("/login")
-                .permitAll()
-                .and()
-        super.configure(http);
+                .permitAll();
+//        super.configure(http);
     }
 }

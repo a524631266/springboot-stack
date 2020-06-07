@@ -37,10 +37,10 @@
                 <!--<enabled>false</enabled>-->
             <!--</snapshots>-->
         <!--</repository>-->
-        <repository>
-            <id>maven-central</id>
-            <url>http://192.168.1.83:8081/repository/maven-central/</url>
-        </repository>
+<!--        <repository>-->
+<!--            <id>maven-central</id>-->
+<!--            <url>http://192.168.1.83:8081/repository/maven-central/</url>-->
+<!--        </repository>-->
 
     </repositories>
 

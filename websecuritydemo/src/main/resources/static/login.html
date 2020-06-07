@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org" xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <meta charset="UTF-8" />
+    <title>Login Html</title>
+</head>
+<body>
+<h1>Welcome!</h1>
+<form action="/wxlogin" method="post">
+    <input id="phone" name="phone" value="123456789" />
+    <input id="password" name="password" value="123456" />
+    <input type="submit" value="提交" />
+    <input type="hidden" name="_csrf" value="OWY4NmQwODE4ODRjN2Q2NTlhMmZlYWEwYzU1YWQwMTVhM2JmNGYxYjJiMGI4MjJjZDE1ZDZMGYwMGEwOA==">
+</form>
+</body>
+</html>

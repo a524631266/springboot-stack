@@ -10,13 +10,15 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
+//        http.headers().frameOptions().disable();
+        http.csrf().disable();
         // 放行所有网页
-        http.authorizeRequests()
-                .antMatchers("/","/home.html","/hello.html").permitAll()
-                .formLogin()
-                .loginPage("/login")
-                .permitAll()
-                .and()
-        super.configure(http);
+//        http.authorizeRequests()
+//                .antMatchers("/login.html","/login","/wxlogin").permitAll()
+//                .and()
+//                .formLogin()
+//                .loginPage("/login")
+//                .permitAll();
+//        super.configure(http);
     }
 }

@@ -3,3 +3,5 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://192.168.1.83:3306/mybatis?useUnicode=true&characterEncoding=UTF-8&createDatabaseIfNotExist=true
     username: root
+mybatis:
+  executor-type: reuse

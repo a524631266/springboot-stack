@@ -15,7 +15,8 @@ public class City implements Serializable {
 
     private String state;
 
-    private String country;
+//    private String country;
+
 
     public Long getId() {
         return this.id;
@@ -41,17 +42,17 @@ public class City implements Serializable {
         this.state = state;
     }
 
-    public String getCountry() {
-        return this.country;
-    }
+//    public String getCountry() {
+//        return this.country;
+//    }
+//
+//    public void setCountry(String country) {
+//        this.country = country;
+//    }
 
-    public void setCountry(String country) {
-        this.country = country;
-    }
-
-    @Override
-    public String toString() {
-        return getId() + "," + getName() + "," + getState() + "," + getCountry();
-    }
+//    @Override
+//    public String toString() {
+//        return getId() + "," + getName() + "," + getState() + "," + getCountry();
+//    }
 
 }

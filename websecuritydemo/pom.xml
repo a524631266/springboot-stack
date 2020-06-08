@@ -5,14 +5,14 @@
     <parent>
         <groupId>com.springboot.stack</groupId>
         <artifactId>parent</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>0.0.1-SNAPSHOT</version>
         <!--<relativePath/> &lt;!&ndash; lookup parent from repository &ndash;&gt;-->
         <relativePath>../pom.xml</relativePath>
     </parent>
     <!--<groupId>com.springboot.stack</groupId>-->
     <artifactId>websecuritydemo</artifactId>
     <!--<version>0.0.1-SNAPSHOT</version>-->
-    <name>demo</name>
+    <name>websecuritydemo</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
